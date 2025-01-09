@@ -1,8 +1,8 @@
 <div class="curso-detail">
     <h1>Detalhes do Curso (ID: {{ cursoId }})</h1>
   
-    <ul>
-      <li *ngFor="let aula of aulas">
+    <ul *NgFor="let aula of aulas">
+      <li>
         <input 
           type="checkbox" 
           [checked]="aula.concluida" 

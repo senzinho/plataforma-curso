@@ -16,6 +16,7 @@ interface Aula {
   styleUrls: ['./curso-detail.component.css']
 })
 export class CursoDetailComponent implements OnInit {
+  
   cursoId: number = 0;
   aulas: Aula[] = [];
 

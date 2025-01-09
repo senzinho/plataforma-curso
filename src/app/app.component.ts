@@ -5,7 +5,7 @@ import { CursoListComponent } from "./components/curso-list/curso-list.component
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CursoDetailComponent, CursoListComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
