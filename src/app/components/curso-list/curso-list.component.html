@@ -1,0 +1,10 @@
+<div class="curso-list">
+    <h1>Bem-vindo à Plataforma de Cursos</h1>
+    <h2>Lista de Cursos</h2>
+    <ul>
+      <li *ngFor="let curso of cursos">
+        <a [routerLink]="['/curso', curso.id]">{{ curso.nome }}</a>
+      </li>
+    </ul>
+  </div>
+  

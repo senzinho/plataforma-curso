@@ -1,0 +1,18 @@
+<div class="curso-detail">
+    <h1>Detalhes do Curso (ID: {{ cursoId }})</h1>
+  
+    <ul>
+      <li *ngFor="let aula of aulas">
+        <input 
+          type="checkbox" 
+          [checked]="aula.concluida" 
+          (change)="marcarConcluida(aula)" 
+        />
+        {{ aula.titulo }}
+      </li>
+    </ul>
+  
+    <!-- Botão para voltar à página anterior -->
+    <button (click)="voltar()">Voltar</button>
+  </div>
+  
